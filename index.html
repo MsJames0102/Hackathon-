@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Camping Trip</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
+
+</head>
+<body>
+    
+    <a-scene>
+        <a-entity environment="preset: forest; dressingAmount: 400" color="#42692f"></a-entity>
+       <a-box color="brown"position="0 0 -4.9" rotation="0 0 0" scale="2 2 2">
+        <a-entity id="box" geometry="primitive: box" material="color: brown"></a-entity>
+       </a-box>
+       <a-cylinder color="brown" position="0 0 -7" rotation="0 0 0" scale="2 2 2">
+       <a-entity id="cylinder" geometry="primitive: cylinder" material="color: brown"></a-entity>
+       </a-cylinder>
+       <a-triangle color="blue"position="0 2 -4" rotation="0 0 0" scale="2 2 2">
+        <a-entity id="triangle" geometry="primitive: triangle" material="color: blue"></a-entity>
+       </a-triangle>
+    </a-scene>
+   <script src="./app.js"></script>
+</body>
+</html>
+
